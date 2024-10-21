@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Post-it lappar på webben">
+    <meta name="keywords" content="Post-it, Fästis, Notis">
+    <title>Post-it</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="postItFormContainer hidden">
+        <div class="innerFormContainer">
+            <form action="js/recieveData.js" class="addPostItForm postItColorYellow" method="post">
+                <input type="text" id="postItHeaderInput" name="postItHeaderInput" placeholder="Rubrik" maxlength="12"
+                    autofocus autocomplete="off" required>
+                <textarea id="postItBodyInput" name="postItBodyInput" maxlength="260" placeholder="Brödtext" required></textarea>
+                <div class="buttonRow">
+                    <button type="submit"><i class="bi bi-file-earmark-plus"></i></button>
+                </div>
+            </form>
+            <button class="goBack" aria-label="Go back"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+    <header>
+        <h1>My Post-its</h1>
+        <button class="addPostItButton"><i class="bi bi-plus-lg"></i></button>
+    </header>
+    <main>
+        <article class="postIt postItColorYellow">
+            <div class="postItHeader">
+                <h2 class="postItTitle">Example</h2>
+                <div class="deleteAndEdit">
+                    <button class="postItEdit"><i class="bi bi-pen"></i></button>
+                    <button class="postItDelete"><i class="bi bi-trash3"></i></button>
+                </div>
+            </div>
+            <div class="postItBody">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam nostrum quasi ex deleniti vero
+                non accusantium, eaque
+            </div>
+        </article>
+    </main>
+    <script src="js/addNewButton.js"></script>
+    <script src="js/recieveData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

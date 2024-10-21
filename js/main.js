@@ -1,0 +1,1 @@
+const postItData = JSON.parse(localStorage.getItem(`postIt${localStorage.length}`));
