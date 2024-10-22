@@ -42,6 +42,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 2rem;
+  gap: 1rem;
 }
 
 .postItFormContainer {
